@@ -9,7 +9,7 @@ import { compose } from 'redux';
 import { defineMessages, injectIntl } from 'react-intl';
 import { Icon } from '@plone/volto/components';
 import zoomSVG from '@plone/volto/icons/zoom.svg';
-import SearchPortal from 'volto-diracom/components/Search/SearchPortal';
+import SearchPortal from './SearchPortal';
 
 const messages = defineMessages({
   search: {

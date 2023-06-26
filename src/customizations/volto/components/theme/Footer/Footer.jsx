@@ -8,7 +8,7 @@ import { UniversalLink } from '@plone/volto/components';
 import { Grid } from 'semantic-ui-react';
 import Container from '@kitconcept/volto-light-theme/components/Atoms/Container/Container';
 import { flattenToAppURL } from '@plone/volto/helpers';
-import SocialNetworks from '../../../../components/SocialNetworks/SocialNetworks';
+import SocialNetworks from '../../../../../components/SocialNetworks/SocialNetworks';
 import config from '@plone/volto/registry';
 
 /**
