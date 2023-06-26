@@ -1,0 +1,39 @@
+@use 'sass:math';
+
+// Variables file
+$white: #fff !default;
+$veryLightGrey: #eee !default;
+$darkGrey: #555555 !default;
+$black: #000 !default;
+$grey: #666 !default;
+$lightgrey: #ecebeb !default;
+$blue-for-grey-contrast: #0070a2 !default;
+$brown: #826a6a !default;
+$blueArctic: #e2f1fd !default;
+$greySnow: #f3f5f7 !default;
+$greySmoke: #e4e8ec !default;
+$darkBlue: #023d6b !default;
+$secondary-grey: #ececec !default;
+
+$brand: #2435a6;
+$brandlight: #7091d8;
+$brandalternate: #50a37f;
+$brandconstrast: $white;
+
+$page-background: $white;
+
+$narrow-container-width: 1100px;
+$default-container-width: 1100px;
+
+$link-color: $darkBlue;
+$link-color-hover: $brand;
+
+$background-containers: $brandlight;
+
+$custom-fontname: 'Oswald' !default;
+$page-font-template: $custom-fontname, sans-serif !default;
+
+// Images
+// Image Aspect Ratio
+$aspect-ratio: math.div(16, 9) !default;
+$teaser-images-aspect-ratio: math.div(16, 9) !default;

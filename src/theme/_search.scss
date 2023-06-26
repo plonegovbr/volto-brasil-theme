@@ -1,0 +1,106 @@
+.search-bar {
+  position: fixed;
+  z-index: 110;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: $background-containers;
+  opacity: 95%;
+  transition: top 500ms ease-in-out, height 500ms ease-in-out;
+  transition-property: top height;
+
+  @media only screen and (max-width: $largest-mobile-screen) {
+    height: 232px;
+  }
+
+  .searchbox {
+    display: flex;
+
+    input {
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 27px;
+    right: 75px;
+    color: $black;
+    cursor: pointer;
+  }
+
+  .ui.container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    form {
+      width: 100%;
+
+      .searchbox {
+        justify-content: space-between;
+        padding-top: 0;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid $black;
+        border-left: none;
+        margin-left: 12.6rem;
+
+        @media only screen and (max-width: $tablet-breakpoint) {
+          padding-top: 2rem;
+          margin-left: 0.5rem;
+        }
+        @media only screen and (max-width: $large-monitor-breakpoint) {
+          padding-top: 0;
+        }
+
+        input {
+          overflow: hidden;
+          width: 70%;
+          padding-left: 0;
+          margin-right: 1rem;
+          background-color: $background-containers;
+          color: $black;
+          font-size: 1.5rem;
+          @media only screen and (min-width: $tablet-breakpoint) and (max-width: 788px) {
+            margin-left: 1.5rem;
+          }
+
+          &::placeholder {
+            color: $black;
+            opacity: 0.5;
+          }
+        }
+
+        button {
+          width: 75px;
+          height: 75px;
+          padding: 10px;
+          border: none;
+          margin-right: 7px;
+          background-color: transparent;
+          border-radius: 50%;
+
+          &:hover {
+            background-color: $darkGrey;
+            border-radius: 50%;
+
+            svg {
+              fill: $white !important;
+            }
+          }
+
+          svg {
+            fill: $black !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+// This theme extends the volto-light-theme
+// it is injected
+
+:root {
+  --narrow-container-width: 1100px;
+  --default-container-width: 1100px;
+  --teaser-images-aspect-ratio: #{$teaser-images-aspect-ratio};
+}
+
+@import 'logo';
+@import 'footer';
