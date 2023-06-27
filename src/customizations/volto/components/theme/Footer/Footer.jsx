@@ -65,11 +65,7 @@ const Footer = () => {
       <Container layout className="signature">
         <span className="item powered-by">
           Desenvolvido pela comunidade{' '}
-          <a
-            href="https://plone.org.br/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://plone.org.br/" target="_blank" rel="noreferrer">
             PloneGov-Br
           </a>{' '}
           utilizando o{' '}

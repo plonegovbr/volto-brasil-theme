@@ -19,7 +19,7 @@ const applyConfig = (config) => {
         id: 'youtube',
         href: 'http://youtube.com/@ploneCMS',
       },
-    ]
+    ],
   };
   return config;
 };

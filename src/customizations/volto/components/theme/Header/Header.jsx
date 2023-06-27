@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Container from '@kitconcept/volto-light-theme/components/Atoms/Container/Container';
-import { Logo, Navigation } from '@plone/volto/components';
+import { Navigation } from '@plone/volto/components';
+import Logo from '@plonegovbr/volto-brasil-site/components/Logo/Logo';
 import SearchWidget from '../../../../../components/Search/SearchWidget';
 import useSticky from '../../../../../helpers/useSticky';
 import cx from 'classnames';
