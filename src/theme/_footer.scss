@@ -1,3 +1,25 @@
-#footer .footer {
-  background-color: $background-containers;
+#footer {
+  .footer {
+    background-color: $background-containers;
+  }
+
+  .signature.layout {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $grey;
+    color: $brand;
+
+    a {
+      font-weight: bold;
+
+      &.distribuicao {
+        background-color: $grey;
+        color: $grey;
+
+        img {
+          width: 130px;
+        }
+      }
+    }
+  }
 }

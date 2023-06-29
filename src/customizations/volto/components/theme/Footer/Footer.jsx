@@ -8,7 +8,8 @@ import { UniversalLink } from '@plone/volto/components';
 import { Grid } from 'semantic-ui-react';
 import Container from '@kitconcept/volto-light-theme/components/Atoms/Container/Container';
 import { flattenToAppURL } from '@plone/volto/helpers';
-import SocialNetworks from '../../../../../components/SocialNetworks/SocialNetworks';
+import Signature from '@plonegovbr/volto-brasil-theme/components/Signature/Signature';
+import SocialNetworks from '@plonegovbr/volto-brasil-theme/components/SocialNetworks/SocialNetworks';
 import config from '@plone/volto/registry';
 
 /**
@@ -27,7 +28,7 @@ const Footer = () => {
     }),
     shallowEqual,
   );
-  const columns = navigation.length;
+  const columns = navigation.length || 1;
   const socialNetworks = settings.socialNetworks;
   return (
     <footer id="footer">
@@ -62,19 +63,7 @@ const Footer = () => {
         </Grid>
         <SocialNetworks networks={socialNetworks} />
       </Container>
-      <Container layout className="signature">
-        <span className="item powered-by">
-          Desenvolvido pela comunidade{' '}
-          <a href="https://plone.org.br/" target="_blank" rel="noreferrer">
-            PloneGov-Br
-          </a>{' '}
-          utilizando o{' '}
-          <a href="https://plone.org.br" target="_blank" rel="noreferrer">
-            Plone CMS
-          </a>
-          {'.'}
-        </span>
-      </Container>
+      <Signature />
     </footer>
   );
 };
